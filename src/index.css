@@ -58,6 +58,8 @@ header {
 
 .about {
   margin: 10px;
+  position: relative;
+  min-height: 100vh;
 }
 
 .about h3 {
@@ -69,6 +71,10 @@ header {
   display: flex;
   color: var(--purple-color);
   font-size: 24px;
+}
+.contact-section {
+  position: relative;
+  min-height: 100vh;
 }
 
 .contact-section h1 {
@@ -161,6 +167,8 @@ label {
 }
 .prof {
   margin: 0 10px;
+  position: relative;
+  min-height: 100vh;
 }
 
 .resume {
@@ -189,7 +197,7 @@ label {
 
 footer {
   display: flex;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   justify-content: center;
   width: 100%;
@@ -222,7 +230,7 @@ footer {
   }
 
   footer {
-    bottom: 0;  
+    position: absolute;
   }
 }
 
@@ -234,15 +242,19 @@ footer {
       padding: 10px;
       grid-gap: 10px;
   }
+
+  footer {
+    bottom: 0;
+    position: sticky;
+  }
+
 }
 
-
 /*  MEDIA QUERY FOR MOBILE PHONES */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 540px) {
   header {
     display: grid;
-    text-align: center;
-    font-size: 16px;
+    justify-content: center;
     height: 175px;
   }
 
@@ -294,6 +306,64 @@ footer {
   }
 }
 
+
+/*  MEDIA QUERY FOR MOBILE PHONES */
+@media only screen and (max-width: 425px) {
+  header {
+    display: grid;
+    text-align: center;
+    font-size: 16px;
+    height: 175px;
+  }
+
+  .nav-row {
+    display: inline-flex;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .nav-bar {
+    display: block;
+    text-align: left;
+  }
+
+  .images-grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  .project-list {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .project-list .text {
+    width: 300px;
+  }
+
+  .images {
+    width: 300px;
+  }
+
+  .images-grid button {
+    width: 150px;
+  }
+
+  .contact-section {
+    height: 600px;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0;  
+  }
+}
+
 /*  MEDIA QUERY FOR MOBILE PHONES */
 @media only screen and (max-width: 376px) {
   .nav-row {
@@ -316,4 +386,43 @@ footer {
     font-size: 22px;
   }
 
+}
+
+/*  MEDIA QUERY FOR MOBILE PHONES */
+@media only screen and (max-width: 320px) {
+  .nav-row {
+    display: inline-flex;
+    font-size: 14px;
+  }
+
+  .contact-section h2 a {
+    font-size: 18px;
+  }
+}
+
+/*  MEDIA QUERY FOR MOBILE PHONES */
+@media only screen and (max-width: 280px) {
+  header {
+    font-size: 22px;
+  }
+  
+  .nav-row {
+    display: inline-flex;
+    font-size: 12px;
+  }
+
+  .images-grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1px;
+    grid-gap: 1px;
+  }
+
+  .contact-section h2 {
+    font-size: 18px;
+  }
+
+  .contact-section h2 a {
+    font-size: 18px;
+  }
 }
