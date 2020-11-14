@@ -51,7 +51,7 @@ function ContactForm() {
       <div>
         <h1>Contact me</h1>
         <h2>Phone: 908-229-2034</h2>
-        <h2>Click Email: <a href="mailto:jeffdmead171@gmail.com">jeffdmead171@gmai.com</a></h2>
+        <h2>Click to email:  <a href="mailto:jeffdmead171@gmail.com">jeffdmead171@gmai.com</a></h2>
       </div>
       {/* <form id="contact-form" onSubmit={handleSubmit}>
             <div>

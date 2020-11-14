@@ -122,6 +122,9 @@ label {
   padding: 10px;
   grid-gap: 10px;
   justify-items: center;
+  margin: 0 10px;
+  position: relative;
+  min-height: 80vh;
 
 }
 
@@ -154,8 +157,6 @@ label {
 }
 
 .project-list .text {
-  /* position: absolute; */
-  /* z-index: 999; */
   margin: 0 auto;
   left: 0;
   top: 0; 
