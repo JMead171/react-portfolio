@@ -139,9 +139,11 @@ label {
 }
 
 .images-grid button {
+  height: 30px;
   width: 175px;
-  background-color: var(--purple-color);
+  background-color: var(--green-color);
   color: white;
+  font-size: 18px;
 }
 
 .images-grid button:hover {
@@ -161,11 +163,23 @@ label {
   left: 0;
   top: 0; 
   text-align: center;
-  background-color: var(--green-color);
-  color:white;
+  background-color: var(--purple-color);
+  color: var(--pink-color);
   font-size: 24px;
   width: 350px;
 }
+
+.project-list .description {
+  margin: 0 auto;
+  left: 0;
+  top: 0; 
+  text-align: center;
+  background-color: var(--purple-color);
+  color: rgb(238, 229, 229);
+  font-size: 20px;
+  width: 350px;
+}
+
 .prof {
   margin: 0 10px;
   position: relative;
